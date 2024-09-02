@@ -18,11 +18,40 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Picker x:Name="pickerNames" Title="Select a name">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>John</x:String>
+                        <x:String>Carl</x:String>
+                        <x:String>Richard</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+
+            <Picker x:Name="pickerColors" Title="Select a color" IsVisible="False">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Red</x:String>
+                        <x:String>Green</x:String>
+                        <x:String>Blue</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker x:Name="pickerMonkeys" Title="Select a monkey">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
 
             <Button
                 x:Name="CounterBtn"
